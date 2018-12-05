@@ -1,0 +1,11 @@
+.custom-fixed-top {
+    position: fixed;
+    top: 0;
+    left: 1rem;
+    right: 1rem;
+    z-index: 1030;
+}
+
+body > .container {
+    padding: 72px 15px 0;
+}
