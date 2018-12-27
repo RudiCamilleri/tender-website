@@ -1,0 +1,55 @@
+Tender Website Notes
+
+----------------------
+Account can be:
+- MITA Agent Account
+- Provider Account
+
+MITA Agent Accounts are responsible for certain actions
+such as updating the statuses of all relevant tender
+website objects (Contracts, Orders, Extensions and
+Delivery), responding to requests (Extensions),
+applying penalties and updating performance guarantees.
+
+Provider Accounts are responsible for certain actions
+such as updating the statuses of all relevant tender
+website objects (Extensions and Delivery), sending
+requests (Extensions) and acting on delayed responses.
+----------------------
+----------------------
+Relationships between objects:
+- Contract can have multiple Orders
+- Order can only have one Contract
+- Order can have multiple Extensions
+- Extension can only have one Order
+- Order can have multiple Deliveries (?)
+- Delivery can only have one Order
+----------------------
+----------------------
+Object details:
+- All objects have
+	- ID
+- Contracts
+	- Name
+	- Date Created
+	- Status
+	- File
+- Orders
+	- Name
+	- Contract
+	- Date Created
+	- Status
+	- Extension
+	- Delivery
+- Extensions
+	- Order
+	- Date Requested
+	- New Deadline
+	- Status
+	- Reasoning (?)
+- Deliveries
+	- Order
+	- Date Created
+	- Status
+	- Acceptance
+-----------------------
