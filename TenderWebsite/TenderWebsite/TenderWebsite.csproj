@@ -142,6 +142,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\contracts.jpg" />
+    <Content Include="Content\Stylesheets\custom-card.css" />
+    <Content Include="Content\Stylesheets\custom-input-addon.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
