@@ -8,9 +8,22 @@ namespace TenderWebsite.Controllers
 {
     public class ContractsController : Controller
     {
-        // GET: Contracts
-        public ActionResult Index()
+        [HttpGet]
+        public ActionResult List()
         {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                // throw custom exception and return to previous page
+            }
+
+            // get details of contract id
+
             return View();
         }
     }

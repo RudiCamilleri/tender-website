@@ -8,10 +8,30 @@ namespace TenderWebsite.Controllers
 {
     public class OrdersController : Controller
     {
-        // GET: Orders
-        public ActionResult Index()
+        [HttpGet]
+        public ActionResult List()
         {
             return View();
+        }
+
+        [HttpGet]
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                // throw custom exception and return to previous page
+            }
+
+            // get details of order id
+
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Add() // order details go here
+        {
+            return RedirectToAction("Details"); // add new request id here
         }
     }
 }
