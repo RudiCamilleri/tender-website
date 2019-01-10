@@ -4,18 +4,57 @@ Tender website front-end
 
 Smart contract code can be found here: https://github.com/mathusummut/tender
 
-# Tools Used
+# Steps to Install Tools Required
 
-1. Visual Studio
-2. node.js
+In this section, you will install the programming tool *Visual Studio* and the package manager *node.js*.
 
-# Steps To Do With node.js
+1. Firstly, follow this link to download Visual Studio: https://visualstudio.microsoft.com/downloads/
+2. Click the "Free download" button under the Community version section on the webpage
+3. Ignore any popups and once downloaded, click the installer
+4. Click on "Yes" and / or "Continue" on any popups that appear and wait until *Visual Studio Installer* downloads and installs
+5. If granted an option, click "Install" in the *Visual Studio Community* section of the *Visual Studio Installer*
+6. If any popups appear, click "Yes" and / or "Continue" and wait until *Visual Studio Community* downloads and installs
+7. If successful, you should have a clean installation of *Visual Studio Community*
+8. Next, to install node.js, kindly visit this link: https://nodejs.org/en/
+9. Click on the button that shows the letters "LTS" and the words "Recommended for most users"
+10. Once the installer downloads, click it
+11. If any popups appear, click "Yes" and / or "Continue"
+12. Proceed within the menus of the installer to start and complete the installation of *node.js*
 
-1. (may need to) add NODE_PATH environment variable
-  - open CMD and use this command: npm root --quiet -g
-  - set the NODE_PATH value to the directory returned by the previous command
-2. in CMD, npm install git -g
-  - (may need to) add to PATH
-3. in CMD, npm install windows-build-tools -g
-4. in CMD, npm install ganache-cli -g
-5. in CMD, npm install ethereum/web3.js -g
+# Steps to Install node.js Packages Required
+
+In this section, you will install the packages required to be able to connect to and inteact with the blockchain-side of this project. These packages include: *git*, *windows-build-tools*, *ganache-cli* and *ethereum/web3.js*. There are also some extra steps required to make sure that no errors appear during this process.
+
+1. Firstly, open Start and type in "cmd"
+2. Click on the option "Command Prompt"
+3. You may need to change your current directory as sometimes, *Command Prompt* opens on the wrong drive
+4. You can do this by simply typing in "C:" or whatever letter your primary drive uses
+5. If you are already at your primary drive, however, you can skip steps 3 - 5
+6. Type in this command in the *Command Prompt*: npm root --quiet -g
+7. You would receive a specific directory as a result
+8. Copy that directory by highlighting it with your cursor.
+9. Now, you need to check whether you have the NODE_PATH environment variable
+10. Open Start and search for "This PC"
+11. When the option "This PC" appears, right-click on it and choose "Properties"
+12. After the window loads, navigate to the left side of it and click "Advanced system settings"
+13. Then, click "Environment Variables..."
+14. Here, we will add the NODE_PATH environment variable by clicking on "New..."
+15. In the "Variable name" field, type in "NODE_PATH"
+16. In the "Variable value" field, paste the directory we copied from before in the command prompt
+17. After this, click "OK"
+18. Repeat steps 1 - 5
+19. In the *Command Prompt*, type in this command: npm install git -g
+20. After this, you need to check if *git* is available in your Path environment variable
+21. To do this, go to yor primary drive in *Windows Explorer* (normally C:)
+22. Navigate to "Program Files\Git\bin"
+23. Check to see if you have a file named "git" in this folder
+24. If you do, go to the address bar and copy the address by right-clicking and choosing "Copy address"
+25. After you are done from this, kindly repeat steps 10 - 13
+26. Instead of clicking on "New..." now, you need to find the "Path" environment variable
+27. Once you do, click on it once and click on "Edit..."
+28. Then, once the new window loads, click on "New"
+29. After that, paste the address we copied from before and click on "OK"
+30. Now, open up the *Command Prompt* again and type in this: npm install windows-build-tools -g
+31. After the installation is done, then type in this: npm install ganache-cli -g
+32. After it is done installing, finally, type in this: npm install ethereum/web3.js -g
+33. If all is successful, then that's it!
