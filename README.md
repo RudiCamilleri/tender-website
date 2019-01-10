@@ -1,8 +1,8 @@
 # Tender Website
 
-Tender website front-end
+This is the front-end side of the Tender project. This front-end is composed of an ASP.NET MVC project. The smart contract and back-end code can be found here: https://github.com/mathusummut/tender
 
-Smart contract code can be found here: https://github.com/mathusummut/tender
+Below, please find some steps that need to be completed to make sure that one is prepared to tackle this project. Tools and packages are required to be able to both program the website and operate / access the smart contracts / blockchain.
 
 # Steps to Install Tools Required
 
