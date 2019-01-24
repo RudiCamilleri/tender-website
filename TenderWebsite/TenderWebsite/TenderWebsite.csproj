@@ -219,12 +219,13 @@
     <Content Include="Views\Orders\Create.cshtml" />
     <Content Include="Views\Orders\List.cshtml" />
     <Content Include="Views\Orders\Details.cshtml" />
+    <Content Include="Views\Deliveries\List.cshtml" />
+    <Content Include="Views\Deliveries\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Contracts\" />
-    <Folder Include="Views\Deliveries\" />
     <Folder Include="Views\Extensions\" />
   </ItemGroup>
   <ItemGroup>

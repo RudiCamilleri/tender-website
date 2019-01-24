@@ -2,7 +2,7 @@
     ViewBag.Title = "Create";
 }
 
-<h1 class="text-center">Create Order</h1>
+<h1 class="text-center pb-4">Create Order</h1>
 
 <div class="row">
     <div class="col-sm-6 offset-sm-3">
@@ -19,8 +19,8 @@
                     <input type="number" name="amount" class="form-control" placeholder="Enter amount to order..." />
                 </div>
                 <div class="form-group">
-                    <label>Delivery Time</label>
-                    <div class="input-group">
+                    <label>Delivery Date</label>
+                    @*<div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Days</span>
                         </div>
@@ -37,9 +37,10 @@
                             <span class="input-group-text">Years</span>
                         </div>
                         <input type="number" name="years" class="form-control"/>
-                    </div>
+                    </div>*@
+                    <input type="date" name="date" class="form-control" placeholder="Enter delivery date..."/>
                 </div>
-                <button type="submit" class="btn btn-lg btn-block btn-primary">Create</button>
+                <button type="submit" class="btn btn-lg btn-block btn-primary mt-4">Create</button>
             </fieldset>
         }
     </div>

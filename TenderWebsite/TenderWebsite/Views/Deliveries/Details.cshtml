@@ -2,22 +2,19 @@
     ViewBag.Title = "Details";
 }
 
-<h1 class="text-center pb-4">Order Details</h1>
+<h1 class="text-center pb-4">Delivery Details</h1>
 
 <div class="row mb-4">
     <div class="col-sm-6 offset-sm-3">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Name</h4>
-                <p class="card-text">Name goes here</p>
+                <h4 class="card-title">Date Delivered</h4>
+                <p class="card-text">Delivery date goes here</p>
                 <hr />
-                <h4 class="card-title">Amount</h4>
+                <h4 class="card-title">Order Amount</h4>
                 <p class="card-text">Amount goes here</p>
                 <hr />
-                <h4 class="card-title">Time Remaining</h4>
-                <p class="card-text">Remaining time calculated goes here</p>
-                <hr />
-                <h4 class="card-title">Cost</h4>
+                <h4 class="card-title">Order Cost</h4>
                 <p class="card-text">Cost goes here</p>
                 <hr />
                 <h4 class="card-title">Created On</h4>
@@ -32,14 +29,11 @@
 <div class="row mb-4">
     <div class="col-sm-6 offset-sm-3">
         <div class="row">
-            <div class="col-md-4 pr-md-2">
-                <button class="btn btn-primary btn-block">Delivery</button>
+            <div class="col-sm-6 pr-sm-2">
+                <button class="btn btn-success btn-block">Accept</button>
             </div>
-            <div class="col-md-4 px-md-2">
-                <button class="btn btn-warning btn-block">Extension</button>
-            </div>
-            <div class="col-md-4 pl-md-2">
-                <button class="btn btn-danger btn-block">Cancel</button>
+            <div class="col-sm-6 pl-sm-2">
+                <button class="btn btn-danger btn-block">Reject</button>
             </div>
         </div>
     </div>
