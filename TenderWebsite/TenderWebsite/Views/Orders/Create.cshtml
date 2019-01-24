@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Create";
+}
+
+<h1 class="text-center">Create Order</h1>
+
+<div class="row">
+    <div class="col-sm-6 offset-sm-3">
+        @using (Html.BeginForm("Create", "Orders", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <fieldset>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" class="form-control" placeholder="Enter order name..." />
+                </div>
+                <div class="form-group">
+                    <label>Amount</label>
+                    <input type="number" name="amount" class="form-control" placeholder="Enter amount to order..." />
+                </div>
+                <div class="form-group">
+                    <label>Delivery Time</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Days</span>
+                        </div>
+                        <input type="number" name="days" class="form-control"/>
+                        <div class="input-group-prepend input-group-append">
+                            <span class="input-group-text">Weeks</span>
+                        </div>
+                        <input type="number" name="weeks" class="form-control"/>
+                        <div class="input-group-prepend input-group-append">
+                            <span class="input-group-text">Months</span>
+                        </div>
+                        <input type="number" name="months" class="form-control"/>
+                        <div class="input-group-prepend input-group-append">
+                            <span class="input-group-text">Years</span>
+                        </div>
+                        <input type="number" name="years" class="form-control"/>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-lg btn-block btn-primary">Create</button>
+            </fieldset>
+        }
+    </div>
+</div>

@@ -27,10 +27,24 @@ namespace TenderWebsite.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Add() // order details go here
+        public ActionResult Create(int? amount) // order details go here
         {
+            //Guid newOrderId = Guid.NewGuid();
+            // update number of s, m, l servers being ordered
+            // set order creation time to now
+            // set deadline time to now + delivery time
+            // set on hold time to 0
+            // set cost to total cost
+            // add order record
+
             return RedirectToAction("Details"); // add new request id here
         }
     }

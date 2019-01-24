@@ -148,6 +148,7 @@
     <Content Include="Content\Images\contracts.jpg" />
     <Content Include="Content\Stylesheets\custom-card.css" />
     <Content Include="Content\Stylesheets\custom-input-addon.css" />
+    <Content Include="Content\Stylesheets\sticky-footer.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -215,6 +216,9 @@
     <Content Include="Views\Shared\Footer.cshtml" />
     <Content Include="Views\Users\Login.cshtml" />
     <Content Include="Views\Users\Home.cshtml" />
+    <Content Include="Views\Orders\Create.cshtml" />
+    <Content Include="Views\Orders\List.cshtml" />
+    <Content Include="Views\Orders\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -222,7 +226,6 @@
     <Folder Include="Views\Contracts\" />
     <Folder Include="Views\Deliveries\" />
     <Folder Include="Views\Extensions\" />
-    <Folder Include="Views\Orders\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

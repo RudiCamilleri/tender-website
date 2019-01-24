@@ -20,9 +20,9 @@ requests (Extensions) and acting on delayed responses.
 Relationships between objects:
 - Contract can have multiple Orders
 - Order can only have one Contract
-- Order can have multiple Extensions
+- Order can only have one Extension
 - Extension can only have one Order
-- Order can have multiple Deliveries (?)
+- Order can have multiple Deliveries
 - Delivery can only have one Order
 ----------------------
 ----------------------

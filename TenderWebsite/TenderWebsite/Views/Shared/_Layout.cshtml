@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -7,14 +7,14 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body class="d-flex flex-column h-100">
+<body>
     @if (ViewBag.Title != "Login")
     {
         @Html.Partial("Header")
     }
 
-    <main class="flex-shrink-0 h-100">
-        <div class="container h-100">
+    <main>
+        <div class="container">
             @RenderBody()
         </div>
     </main>
