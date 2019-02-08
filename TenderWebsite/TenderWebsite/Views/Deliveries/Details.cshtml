@@ -28,13 +28,6 @@
 </div>
 <div class="row mb-4">
     <div class="col-sm-6 offset-sm-3">
-        <div class="row">
-            <div class="col-sm-6 pr-sm-2">
-                <button class="btn btn-success btn-block">Accept</button>
-            </div>
-            <div class="col-sm-6 pl-sm-2">
-                <button class="btn btn-danger btn-block">Reject</button>
-            </div>
-        </div>
+        @Html.ActionLink("Go to Order", "Details", "Orders", null, new { @class = "btn btn-primary btn-block" })
     </div>
 </div>
