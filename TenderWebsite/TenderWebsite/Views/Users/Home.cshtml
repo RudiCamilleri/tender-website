@@ -2,10 +2,33 @@
     ViewBag.Title = "Home";
 }
 
-<div class="jumbotron">
+<div class="jumbotron text-center">
     <h1>Welcome!</h1>
-    <hr />
-    <p class="lead">Kindly click one of the options below to get started!</p>
+</div>
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card mb-4">
+            <div class="card-body text-center">
+                <h6 class="card-text">Orders due</h6>
+                <h2 class="card-text">23</h2>
+            </div>
+            <div class="card-footer text-right">
+                @Html.ActionLink("View Orders", "List", "Orders", null, new { @class = "btn btn-primary" })
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card mb-4">
+            <div class="card-body text-center">
+                <h6 class="card-text">Amount of deliveries</h6>
+                <h2 class="card-text">154</h2>
+            </div>
+            <div class="card-footer text-right">
+                @Html.ActionLink("View Deliveries", "List", "Deliveries", null, new { @class = "btn btn-primary" })
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="row">
